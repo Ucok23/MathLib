@@ -10,6 +10,9 @@ internal class CubeTest {
     fun testArea() = assert(testCube.area == 12.0)
 
     @Test
+    fun testCalcArea() = assert(Cube.calcArea(2.0) == 12.0)
+
+    @Test
     fun testVolume() = assert(testCube.volume == 8.0)
 
     @Test
