@@ -7,14 +7,14 @@ internal class CubeTest {
     private val testCube = Cube(2.0)
 
     @Test
-    fun getArea() = assert(testCube.getArea() == 12.0)
+    fun getArea() = assert(testCube.area == 12.0)
 
     @Test
-    fun getVolume() = assert(testCube.getVolume() == 8.0)
+    fun getVolume() = assert(testCube.volume == 8.0)
 
     @Test
-    fun getFaceDiagonal() = assert(testCube.getFaceDiagonal() == 2.0)
+    fun getFaceDiagonal() = assert(testCube.faceDiagonal == 2.0)
 
     @Test
-    fun spaceDiagonal() = assert(String.format("%.2f", testCube.getSpaceDiagonal()).toDouble() == 2.45)
+    fun spaceDiagonal() = assert(String.format("%.2f", testCube.spaceDiagonal).toDouble() == 2.45)
 }
