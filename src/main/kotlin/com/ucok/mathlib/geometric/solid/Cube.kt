@@ -12,14 +12,24 @@ class Cube(var length: Double): Shape {
     }
 
     override val area: Double
-        get() = 6 * length
+        get() = calcArea(length)
 
     override val volume: Double
-        get() = length.pow(3)
+        get() = calcVolume(length)
 
     val faceDiagonal: Double
-        get() = sqrt(2 * length)
+        get() = calcFaceDiagonal(length)
 
     val spaceDiagonal: Double
-        get() = sqrt(3 * length)
+        get() = calcSpaceDiagonal(length)
+
+    companion object {
+        fun calcArea(length: Double) = 6 * length
+
+        fun calcVolume(length: Double) = length.pow(3)
+
+        fun calcFaceDiagonal(length: Double) = sqrt(2 * length)
+
+        fun calcSpaceDiagonal(length: Double) = sqrt(3 * length)
+    }
 }
