@@ -10,5 +10,5 @@ class Cube(private val length: Double): Shape {
 
     fun getFaceDiagonal(): Double = sqrt(2 * length)
 
-    fun spaceDiagonal(): Double = sqrt(3 * length)
+    fun getSpaceDiagonal(): Double = sqrt(3 * length)
 }
