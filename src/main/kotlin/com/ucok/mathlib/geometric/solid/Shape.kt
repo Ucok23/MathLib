@@ -1,7 +1,7 @@
 package com.ucok.mathlib.geometric.solid
 
 interface Shape {
-    fun getArea(): Double
+    val area: Double
 
-    fun getVolume(): Double
+    val volume: Double
 }
