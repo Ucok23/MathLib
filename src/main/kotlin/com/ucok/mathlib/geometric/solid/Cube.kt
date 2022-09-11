@@ -24,6 +24,7 @@ class Cube(var length: Double): Shape {
         get() = calcSpaceDiagonal(length)
 
     companion object {
+
         fun calcArea(length: Double) = 6 * length
 
         fun calcVolume(length: Double) = length.pow(3)
