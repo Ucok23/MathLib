@@ -10,5 +10,6 @@ fun main() {
     println(line)
 
     val cube = Cube(12.0)
-    println(cube.getArea())
+    cube.length = 1.0
+    println(cube.area)
 }
